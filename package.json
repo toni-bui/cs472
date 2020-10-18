@@ -1,0 +1,19 @@
+{
+  "name": "cs472",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toni-bui/cs472.git"
+  },
+  "author": "Toni Bui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toni-bui/cs472/issues"
+  },
+  "homepage": "https://github.com/toni-bui/cs472#readme"
+}
