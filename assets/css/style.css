@@ -5,14 +5,14 @@ html, body {
 body {
 	background-color: #dddddd;
 	font-family: Helvetica, Arial, sans-serif;
-	color:#222;
+	color:#444;
 }
 img {
 	border: 0;
 }
 a {
 	text-decoration: none;
-	color: #222;
+	color: #444;
 }
 .container {
 	margin: 0px auto;
@@ -31,6 +31,7 @@ header .container {
 }
 footer {
 	font-size: .8em;
+	color: #888;
 }
 header .avatar {
 	background-image: url("../img/0.png");
