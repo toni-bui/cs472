@@ -14,6 +14,12 @@ a {
 	text-decoration: none;
 	color: #444;
 }
+h1, h2, h3 {
+	color: #8AA771;
+}
+h1 {
+	font-size: 3em;
+}
 .container {
 	margin: 0px auto;
 	width: 90%;
@@ -34,26 +40,29 @@ footer {
 	color: #888;
 }
 header .avatar {
-	background-image: url("../img/0.png");
-	background-size: auto 100% ;
+	display: block;
+	background-image: url("../img/miu.png");
+	background-size: auto 90% ;
 	background-repeat: no-repeat;
 	background-position: center center;
 	height: 160px;
 	width: 160px;
 	border-radius: 50%;
+	background-color: #eee;
+	border: 1px solid #8AA771;
 }
-footer .container {
+/* footer .container {
 	padding: 0 20px 20px;
-}
+} */
 footer .copyright {
 	line-height: 32px;
 }
 footer .banner {
-	background-image: url("../img/footer-banner.png");
+	/* background-image: url("../img/footer-banner.png");
 	background-size: auto 100% ;
 	background-position: center center;
 	height: 60px;
-	margin: 0px -20px 20px;
+	margin: 0px -20px 20px; */
 }
 .pull-left {
 	float:left;
@@ -71,4 +80,10 @@ footer .banner {
 }
 .menu li {
 	padding : 10px;
+}
+footer .container {
+	border-top :10px double #8AA771;
+}
+footer .validator a {
+	display: inline-block;
 }
