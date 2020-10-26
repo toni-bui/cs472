@@ -1,0 +1,141 @@
+html, body {
+	margin: 0;
+}
+body {
+	background-image: url("../img/background.png");
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+}
+img {
+	border: 0;
+}
+.text-center {
+	text-align: center;
+}
+.pull-left {
+	float:left;
+}
+.pull-right {
+	float:right;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+	border: 5px solid #7F7F81;
+	border-radius: 20px;
+}
+.banner img {
+	width:100%;
+}
+h1 {
+	text-shadow: 1px 1px #eee;
+}
+.side-bar {
+	float:right;
+	width:25%;
+	box-sizing: border-box;
+	background-color: #A1B963;
+	overflow: hidden;
+	border-top-right-radius: 15px;
+}
+.movie-poster img {
+	width:100%;
+}
+.movie-casting {
+	padding: 15px;
+}
+.movie-casting dl {
+	margin-top: 0px;
+}
+.movie-casting dt {
+	font-weight: 700;
+	margin-top: 20px;
+}
+.movie-casting dt:first {
+	margin-top: 0px;
+}
+.movie-casting dd {
+	padding-left: 1.6em;
+	font-size: .9em;
+}
+.movie-casting ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.movie-casting li {
+	padding-left: 0;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.footer {
+	text-align: center;
+	background-color: #A1B963;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-size: .9em;
+}
+.footer p {
+	margin: 0;
+	padding: 10px;
+}
+
+.content {
+	float:left;
+	width:75%;
+	box-sizing: border-box;
+}
+.rate {
+	background-image: url("../img/rbg.png");
+	background-size: auto 100%;
+	height: 83px;
+	border-top-left-radius: 15px;
+}
+.rate img {
+	border-top-left-radius: 15px;
+	height: 83px;
+	display: inline-block;
+}
+.rate span {
+	height: 83px;
+	display: inline-block;
+	font-size: 72px;
+	line-height: 83px;
+	color:#FE0103;
+	font-weight: 700;
+}
+.col {
+	width:47%;
+	float: left;
+	margin-left:2%;
+}
+.review-box {
+	margin-bottom:20px;
+	overflow: hidden;
+}
+.review {
+	background-color: #E7DC9A;
+	border-radius: 20px;
+	padding:10px;
+	border: 2px solid #7F7F81;
+	font-weight: 700;
+}
+.author img {
+	font-size: .9em;
+	float: left;
+	padding-right: 10px;
+}
+.author .org {
+	font-style: italic;
+}
+.validator {
+	position: absolute;
+	top: auto;
+	left: auto;
+	bottom:0;
+	right: 0;
+}
