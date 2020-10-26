@@ -51,7 +51,7 @@ h1 {
 	font-weight: 700;
 	margin-top: 20px;
 }
-.movie-casting dt:first {
+.movie-casting dt:first-child {
 	margin-top: 0px;
 }
 .movie-casting dd {
