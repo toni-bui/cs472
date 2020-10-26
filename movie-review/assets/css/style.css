@@ -28,7 +28,7 @@ img {
 	width:100%;
 }
 h1 {
-	text-shadow: 1px 1px #eee;
+	text-shadow: 3px 2px #999;
 }
 .side-bar {
 	float:right;
@@ -81,7 +81,7 @@ h1 {
 }
 .footer p {
 	margin: 0;
-	padding: 10px;
+	padding: 5px;
 }
 
 .content {
