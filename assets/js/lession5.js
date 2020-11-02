@@ -8,16 +8,16 @@ function maxOfThree(a, b, c) {
 }
 
 function isVowel(c) {
-	const vowels = ['a', 'e', 'i','o','u'];
+	const vowels = ['a', 'e', 'i', 'o', 'u'];
 	return vowels.includes(c);
 }
 
 function sum(arr) {
-	return arr.reduce((accum, elem) => accum + elem);
+	return arr.reduce((accum, curr) => accum + curr);
 }
 
 function multiply(arr) {
-	return arr.reduce((accum, elem) => accum * elem);
+	return arr.reduce((accum, curr) => accum * curr);
 }
 
 function reverse(str) {
@@ -26,8 +26,7 @@ function reverse(str) {
 
 function findLongestWord(str) {
 	let longestWord = str.split(' ').reduce(
-		(longest, currentWord) => currentWord.length > longest.length ? currentWord : longest,
-		""
+		(longest, curr) => curr.length > longest.length ? curr : longest
 	);
 	return longestWord.length;
 }
@@ -48,10 +47,7 @@ function jsfiddle(arr) {
 
 function equals(a, b) {
 	if (Array.isArray(a) || Array.isArray(b)) {
-		if (a.length === b.length && a.every((val, index) => val === b[index])) {
-			return true;
-		}
-		return false;
+		return (a.length === b.length && a.every((val, index) => val === b[index]));
 	}
 	return a === b;
 }
