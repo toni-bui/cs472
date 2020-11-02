@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.col1 {
+	width: 30%;
+	order: 1;
+}
+.col2 {
+	order: 2;
+	width:40%;
+}
+.col3 {
+	order: 3;
+	width: 30%;
+}
+@media screen and (max-width: 600px) {
+	.col1, .col3 {
+		width:50%;
+	}
+	.col3 {
+		order: 2;
+	}
+	.col2 {
+		order: 3;
+		width: 100%;
+	}
+}

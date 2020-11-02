@@ -1,0 +1,45 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+header, .header {
+	background-color: #ADD8E6;
+	padding:15px;
+	font-weight: 700;
+	text-align: center;
+}
+footer, .footer {
+	background-color: #2F4F4F;
+	color:#FFF;
+	padding:15px;
+	font-weight: 700;
+	text-align: center;
+}
+.nav {
+	background-color: #2F4F4F;
+}
+.nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+	border-left: 1px solid #000;;
+	padding:12px;
+}
+.nav a:first-child {
+	border: 0;
+}
+.mycol {
+	height:20vh;
+}
+.col1 {
+	background-color: #AAAAAA;
+}
+.col2 {
+	background-color: #BBBBBB;
+}
+.col3 {
+	background-color: #CCCCCC;
+}
