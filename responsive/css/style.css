@@ -34,6 +34,11 @@ footer, .footer {
 .mycol {
 	height:20vh;
 }
+.col {
+	padding: 20px;
+	height:20vh;
+	box-sizing: border-box;
+}
 .col1 {
 	background-color: #AAAAAA;
 }

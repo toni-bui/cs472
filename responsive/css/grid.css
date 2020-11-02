@@ -47,6 +47,7 @@ body {
 .col {
 	height:20vh;
 	padding:20px;
+	box-sizing: border-box;
 }
 .col1 {
 	grid-area: col1;

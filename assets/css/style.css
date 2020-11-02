@@ -51,18 +51,8 @@ header .avatar {
 	background-color: #eee;
 	border: 1px solid #8AA771;
 }
-/* footer .container {
-	padding: 0 20px 20px;
-} */
 footer .copyright {
 	line-height: 32px;
-}
-footer .banner {
-	/* background-image: url("../img/footer-banner.png");
-	background-size: auto 100% ;
-	background-position: center center;
-	height: 60px;
-	margin: 0px -20px 20px; */
 }
 .pull-left {
 	float:left;
@@ -75,10 +65,18 @@ footer .banner {
 }
 .menu {
 	padding:0px;
-	margin:0px;
-	list-style-type: none;
+	margin:10px 0 0 30px;
+	list-style-type: "\1F44D";
 }
 .menu li {
+	padding : 10px;
+}
+.submenu {
+	padding:0px;
+	margin:10px 0 0 30px;
+	list-style-type: circle;
+}
+.submenu li {
 	padding : 10px;
 }
 footer .container {
