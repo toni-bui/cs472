@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+nav {
+    background-color: #CCC;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-bottom-left-radius: 10px;
+    z-index:900;
+}
+nav div {
+    display: inline-block;
+}
+input {
+    outline: none;
+    font-size: 10px;
+}
+input:active {
+    outline: none;
+}
+
+input[type=button] {
+    width: 60px;
+    background-color: #AAA;
+    border-style: solid;
+    border-color: #AAA;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+input[type=color] {
+    border-style: solid;
+    border-color: #AAA;
+    padding: 5px 10px;
+    background-color: #AAA;
+    border-radius: 5px;
+}
+label {
+    font-size: 10px;
+}
+#drawingCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .1);
+    z-index:800;
+    display: none;
+}
+#validate {
+    background-color: #aaa;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index:600;
+    border: 1px solid #000;
+}
