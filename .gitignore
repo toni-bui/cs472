@@ -133,3 +133,9 @@ buildNumber.properties
 .factorypath
 .project
 .vscode/
+
+classes/
+lib/
+.editorconfig
+.gitattributes
+.travis.yml
