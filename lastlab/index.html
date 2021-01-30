@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div id="setting" class="card">
+    <div class="card-body">
+        <form id="post_form" class="form-inline">
+            <div class="mb-2 mr-sm-2">
+                <input type="number" name="userId" required class="form-control" placeholder="User ID" />
+            </div>
+            <div class="mb-2 mr-sm-2">
+                <button id="btnStart" type="submit" class="btn btn-primary" >Get data</button>
+            </div>
+        </form>
+    </div>
+</div>
+<ul id="post_list" class="list-group"></ul>
+<template id="comment_tpl">
+<li class="list-group-item list-group-item-light"><strong></strong><br/><span></span><div></div></li>
+</template>
+<template id="post_tpl">
+<li class="list-group-item"><h3></h3><div></div><a href="javascript:;" class="green" data-id="">Show comments</a><ul class="comment_list"></ul></li>
+</template>
+<div class="clearfix"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>

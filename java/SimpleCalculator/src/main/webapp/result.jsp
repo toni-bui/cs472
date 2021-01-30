@@ -14,7 +14,7 @@
 		</div>
 		<div class="row">Plus: <%= request.getAttribute("sum") %></div>
 		<div class="row">Subtract: <%= request.getAttribute("subtract") %></div>
-		<div class="row">Multiply: <%= request.getAttribute("mulifly") %></div>
+		<div class="row">Multiply: <%= request.getAttribute("multifly") %></div>
 		<div class="row">Divide: <%= request.getAttribute("divide") %></div>
 	</form>
 </div>

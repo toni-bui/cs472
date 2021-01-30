@@ -1,4 +1,4 @@
-package edu.miu.cs472;
+/* package edu.miu.cs472;
 
 import java.net.URL;
 import java.security.ProtectionDomain;
@@ -22,10 +22,12 @@ public final class App {
             connector.setPort(8080);
             connector.setIdleTimeout(30000);
             server.setConnectors(new Connector[] {connector});
-            ProtectionDomain domain = App.class.getProtectionDomain();
-            URL location = domain.getCodeSource().getLocation();
+            // ProtectionDomain domain = App.class.getProtectionDomain();
+            // URL location = domain.getCodeSource().getLocation();
             WebAppContext webapp = new WebAppContext();
-            webapp.setWar(location.toExternalForm());
+            webapp.setContextPath("/");
+            webapp.setWar("target/java-1.0-SNAPSHOT.war");
+            // webapp.setWar(location.toExternalForm());
             server.setHandler(webapp);
             server.start();
             server.join();
@@ -34,3 +36,4 @@ public final class App {
         }
     }
 }
+ */

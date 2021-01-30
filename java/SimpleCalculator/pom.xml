@@ -3,15 +3,20 @@
   <groupId>edu.miu.cs472</groupId>
   <artifactId>java</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
   <properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
-    <packaging>war</packaging>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target> -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>5.6.0</junit.version>
+    <jetty.version>10.0.0</jetty.version>
+    <log4j.version>1.2.17</log4j.version>
+    <slf4j.version>1.6.1</slf4j.version>
   </properties>
   <dependencies>
-    <dependency>
+    <!-- <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.16</version>
@@ -21,28 +26,48 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.17</version>
+    </dependency> -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+  </dependency>
+  <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
+  </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>${jetty.version}</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>11.0.0</version>
+      <version>${jetty.version}</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>11.0.0</version>
+      <version>${jetty.version}</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-webapp</artifactId>
-      <version>11.0.0</version>
+      <version>${jetty.version}</version>
       <scope>provided</scope>
     </dependency>
-    <dependency>
+    <!-- <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-util</artifactId>
+      <version>${jetty.version}</version>
+    </dependency> -->
+    <!-- <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
-      <version>11.0.0</version>
-    </dependency>
+      <version>${jetty.version}</version>
+    </dependency> -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -55,10 +80,31 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+    <!-- remove when run jetty:run-war -->
+    <!-- <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>apache-jsp</artifactId>
+      <version>${jetty.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>apache-jstl</artifactId>
+      <version>${jetty.version}</version>
+      <scope>runtime</scope>
+    </dependency> -->
+<!-- 
+    <dependency>
+        <groupId>jstl</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.2</version>
+        <scope>runtime</scope>
+    </dependency> -->
+    <!-- end remove -->
   </dependencies>
   <build>
     <plugins>
-      <plugin>
+      <!-- <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.3.1</version>
@@ -80,7 +126,25 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>${jetty.version}</version>
+        <configuration>
+            <webAppSourceDirectory>${project.basedir}</webAppSourceDirectory>
+            <scanIntervalSeconds>10</scanIntervalSeconds>
+            <webApp>
+                <descriptor>WEB-INF/web.xml</descriptor>
+                <contextPath>/</contextPath>
+            </webApp>
+            <!-- <packagingExcludes>WEB-INF/lib/apache-jsp*.jar,>WEB-INF/lib/apache-jstl*.jar</packagingExcludes> -->
+            <!-- <packagingExcludes>
+              WEB-INF/lib/commons-logging-*.jar,
+              %regex[WEB-INF/lib/log4j-(?!over-slf4j).*.jar]
+            </packagingExcludes> -->
+        </configuration>
+    </plugin>
     </plugins>
   </build>
 </project>

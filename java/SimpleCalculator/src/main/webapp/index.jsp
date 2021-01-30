@@ -8,28 +8,44 @@
 </head>
 <body>
 <div class="container">
-	<form method="post" id="calculator" action="/SimpleCalculator/calculator">
+	<form method="post" id="calculator" action="/calculator">
 		<div class="row">
 			<h3>Simple Calculator</h3>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				<input type="number" name="n0" class="form-control" /> + <input type="number" name="n1" class="form-control" />
+			<div class="col-md-2">
+				<input type="number" name="n0" class="form-control" />
+			</div>
+			<div class="col-md-1">+</div>
+			<div class="col-md-2">
+				<input type="number" name="n1" class="form-control" />
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				<input type="number" name="n2" class="form-control" /> - <input type="number" name="n3" class="form-control" />
+			<div class="col-md-2">
+				<input type="number" name="n2" class="form-control" />
+			</div>
+			<div class="col-md-1">-</div>
+			<div class="col-md-2">
+				<input type="number" name="n3" class="form-control" />
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				<input type="number" name="n4" class="form-control" /> * <input type="number" name="n5" class="form-control" />
+			<div class="col-md-2">
+				<input type="number" name="n4" class="form-control" />
+			</div>
+			<div class="col-md-1">*</div>
+			<div class="col-md-2">
+				<input type="number" name="n5" class="form-control" />
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				<input type="number" name="n6" class="form-control" /> / <input type="number" name="n7" class="form-control" />
+			<div class="col-md-2">
+				<input type="number" name="n6" class="form-control" />
+			</div>
+			<div class="col-md-1">/</div>
+			<div class="col-md-2">
+				<input type="number" name="n7" class="form-control" />
 			</div>
 		</div>
 		<div class="row">

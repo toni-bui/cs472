@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="https://java.sun.com/xml/ns/j2ee" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://java.sun.com/xml/ns/j2ee https://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" 
+		version="2.0">
+	<description>Number Formatter Custom Tag</description>
+	<tlib-version>2.1</tlib-version>
+	<short-name>Custom TLD</short-name>
+	<uri>http://cs.miu.edu</uri>
+	<tag>
+		<description>Generates a label</description>
+		<name>Label</name>
+		<tag-class>edu.miu.cs472.tags.Label</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>foreColor</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>text</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<description>Current date time</description>
+		<name>CurrentDateTime</name>
+		<body-content>empty</body-content>
+		<tag-class>edu.miu.cs472.tags.CurrentDateTime</tag-class>
+		<attribute>
+			<name>color</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>size</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<!-- <tag>
+		<name>formatNumber</name>
+		<tag-class>com.journaldev.jsp.customtags.NumberFormatterTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>format</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>number</name>
+			<required>true</required>
+		</attribute>
+	</tag> -->
+</taglib>
