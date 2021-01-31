@@ -9,28 +9,32 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-<div id="setting" class="card">
-    <div class="card-body">
-        <form id="post_form" class="form-inline">
-            <div class="mb-2 mr-sm-2">
-                <input type="number" name="userId" required class="form-control" placeholder="User ID" />
-            </div>
-            <div class="mb-2 mr-sm-2">
-                <button id="btnStart" type="submit" class="btn btn-primary" >Get data</button>
-            </div>
-        </form>
+<div class="container">
+<h1>Final Lab</h1>
+<div class="row">
+    <div class="col-sm-6">
+    <div id="setting" class="card">
+        <div class="card-body">
+            <form id="post_form" class="form-inline">
+                <div class="mr-4">
+                    <input type="number" name="userId" required class="form-control" placeholder="User ID" min="1" max="10" />
+                </div>
+                <button id="btnStart" type="submit" class="btn btn-primary">Load</button>
+            </form>
+        </div>
     </div>
 </div>
+</div>
+<div id="info" class="mt-2"><h2></h2><a></a><div></div><hr/></div>
 <ul id="post_list" class="list-group"></ul>
+</div>
 <template id="comment_tpl">
 <li class="list-group-item list-group-item-light"><strong></strong><br/><span></span><div></div></li>
 </template>
 <template id="post_tpl">
-<li class="list-group-item"><h3></h3><div></div><a href="javascript:;" class="green" data-id="">Show comments</a><ul class="comment_list"></ul></li>
+<li class="list-group-item"><h3></h3><div></div><a href="javascript:;">Show comments</a><ul class="comment_list"></ul></li>
 </template>
-<div class="clearfix"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
 </body>
 </html>

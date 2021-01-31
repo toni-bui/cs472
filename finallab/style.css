@@ -1,10 +1,9 @@
-#setting {
-    margin: 20px;
-    width: 400px;
-}
 .comment_list {
     display: none;
 }
 .comment_list span {
     font-size: .8em;
+}
+#info {
+    display: none;
 }
