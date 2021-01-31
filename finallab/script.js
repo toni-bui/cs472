@@ -56,9 +56,10 @@ $(function() {
 	function subscribeHashChange() {
 		if (window.location.hash) {
 			try {
-				id = parseInt(window.location.hash.substring(1));
+				let id = parseInt(window.location.hash.substring(1));
 				postList.html('');
 				loadPost({userId:id});
+				postForm[0].userId.value = id;
 			} catch(ex) {
 				console.log(ex)
 			}
